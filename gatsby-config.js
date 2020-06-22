@@ -1,9 +1,9 @@
 module.exports = {
     siteMetadata: {
-		title: 'Gatsby - SCSS Starter',
+		title: 'Zakir Sajib - Google pagespeed',
         description: `Open-Source Gatsby Starter with SCSS Styling`,
-        author: `@Sm0keDev`,
-		siteUrl: `https://gatsby-starter-scss.appseed.us`
+        author: `@zakirsajib`,
+		siteUrl: `https://zakir-pagespeed.netlify.app/`
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

@@ -15,7 +15,7 @@ import logo from "../../static/images/logo.png"
 import iconTwitter from "../../static/images/icon-twitter.svg"
 import iconLinkedin from "../../static/images/icon-linkedin.svg"
 import iconGitHub from "../../static/images/icon-github.svg"
-import iconInstagram from "../../static/images/icon-instagram.svg"
+
 
 const Layout = ({children}) => (
     <StaticQuery query={graphql`
@@ -36,13 +36,13 @@ const Layout = ({children}) => (
                         <div className={"col-5"}>
                             <div className={"widget__item"}>
                                 <div className={"logo"}>
-                                    <Link to="/" title={"Gatsby Starter"}>
+                                    <Link to="/" title={"Zakir Sajib"}>
                                         <img alt={"Logo"} src={logo}/>
                                     </Link>
                                 </div>
 
                                 <div className={"about"}>
-                                    <p>Blazing fast app, coded in GatsbyJS and styled in SCSS.</p>
+                                    <p>Stay Home | Stay Safe</p>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +52,22 @@ const Layout = ({children}) => (
                                 <ul className={"links"}>
                                     <h4>Links</h4>
                                     <ul>
-                                        <li><Link to="/about" title={"About Us"}>About Page</Link></li>
-                                        <li><a href="https://github.com/app-generator/gatsby-starter-scss" title={"Gatsby Starter, source code"}>Sources</a></li>
+                                        <li><a
+                                                href="https://nirvana.netlify.app/about"
+                                                title={"About me"}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >About
+                                            </a>
+                                        </li>
+                                        <li><a
+                                                href="https://nirvana.netlify.app/contact"
+                                                title={"Contact me"}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >Contact
+                                            </a>
+                                        </li>
                                     </ul>
                                 </ul>
                             </div>
@@ -64,9 +78,24 @@ const Layout = ({children}) => (
                                 <ul className={"links"}>
                                     <h4>Related</h4>
                                     <ul>
-                                        <li><a href="https://appseed.us/apps/gatsbyjs" title={"More Gatsbyjs Apps"}>Gatsbyjs Apps</a></li>
-                                        <li><a href="https://blog.appseed.us/gatsbyjs-is-fast-but-why/" title={"Blog Article - GatsbyJS is fast, but why?"}>Why Gatsby is Fast</a></li>
-                                        <li><a href="https://blog.appseed.us/tag/gatsbyjs/" title={"Blog Articles related to Gatsby"}>Gatsbyjs Articles</a></li>
+                                        <li><a
+                                                href="https://zsresume.netlify.app/"
+                                                title={"Resume of Zakir Sajib"}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                            Resume
+                                            </a>
+                                        </li>
+                                        <li><a
+                                                href="https://nirvana.netlify.app/"
+                                                title={"Blog Articles related to Web development"}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                            Blog
+                                            </a>
+                                        </li>
                                     </ul>
                                 </ul>
                             </div>
@@ -75,8 +104,26 @@ const Layout = ({children}) => (
                         <div className={"col-2"}>
                             <div className={"widget__item"}>
                                 <div className={"social"}>
-                                    <a href="https://github.com/app-generator/gatsby-starter-scss" title={"GitHub"}><img alt={"GitHub"} src={iconGitHub}/></a>
-                                    <a href="https://twitter.com/Sm0keDev" title={"Twitter"}><img alt={"Twitter"} src={iconTwitter}/></a>
+                                    <a
+                                        href="https://github.com/zakirsajib"
+                                        title={"GitHub"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    ><img
+                                        alt={"GitHub"}
+                                        src={iconGitHub}
+                                    />
+                                    </a>
+                                    <a
+                                        href="https://twitter.com/ZakirSajib"
+                                        title={"Twitter"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    ><img
+                                        alt={"Twitter"}
+                                        src={iconTwitter}
+                                    />
+                                    </a>
                                 </div>
                             </div>
                         </div>

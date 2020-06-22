@@ -8,13 +8,17 @@ const Header = ({siteTitle}) => (
         <div className={"container"}>
             <div className={"top-menu"}>
                 <div className={"logo"}>
-                    <Link to="/" title={"Gatsby Starter"}>
+                    <Link to="/" title={"Zakir Sajib"}>
                         <img alt={"Logo"} src={logo}/>
                     </Link>
                 </div>
 
                 <div className={"get-started"}>
-                    <a href="https://github.com/app-generator/gatsby-starter-scss">Get Sources</a>
+                    <a
+                        href="https://zsresume.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >About Me</a>
                 </div>
             </div>
         </div>
