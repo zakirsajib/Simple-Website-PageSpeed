@@ -23,7 +23,7 @@ module.exports = {
                 short_name: `starter`,
                 start_url: `/`,
                 background_color: `#663399`,
-                theme_color: `#FF54AC`,
+                theme_color: `#8953B7`,
                 display: `minimal-ui`,
                 icon: `${__dirname}/static/images/histaff.png`, // This path is relative to the root of the site.
             },

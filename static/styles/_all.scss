@@ -1,5 +1,9 @@
 $break-small: 719px;
 
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
 body {
   font-family: Inter;
   color: #797283;
