@@ -13,7 +13,7 @@ import Header from "./header"
 import "../../static/styles/main.scss"
 import logo from "../../static/images/logo.png"
 import iconTwitter from "../../static/images/icon-twitter.svg"
-import iconLinkedin from "../../static/images/icon-linkedin.svg"
+//import iconLinkedin from "../../static/images/icon-linkedin.svg"
 import iconGitHub from "../../static/images/icon-github.svg"
 
 
@@ -52,22 +52,8 @@ const Layout = ({children}) => (
                                 <ul className={"links"}>
                                     <h4>Links</h4>
                                     <ul>
-                                        <li><a
-                                                href="https://nirvana.netlify.app/about"
-                                                title={"About me"}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >About
-                                            </a>
-                                        </li>
-                                        <li><a
-                                                href="https://nirvana.netlify.app/contact"
-                                                title={"Contact me"}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >Contact
-                                            </a>
-                                        </li>
+                                        <li><Link to="/about" title={"About me"}>About</Link></li>
+                                        <li><Link to="/contact" title={"Contact me"}>Contact</Link></li>
                                     </ul>
                                 </ul>
                             </div>

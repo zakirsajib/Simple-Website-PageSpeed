@@ -18,7 +18,7 @@ var videoStyle = {
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Open-Source Gatsby Starter with SCSS Styling"/>
+        <SEO title="Zakir Sajib - Full Stack Web Developer"/>
 
         <div className={"page-header home"}>
             <h1><a
@@ -38,7 +38,7 @@ const IndexPage = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                 > Web Developer
-                </a> (Yes both front and backend) with<br />
+            </a> (Yes both front and back-end) with<br />
                 <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>,
                 <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer"> Gatsby</a>,
                 <a href="https://wordpress.org/" target="_blank" rel="noopener noreferrer"> WordPress</a> and
@@ -51,7 +51,7 @@ const IndexPage = () => (
                 <div className={"col-2 first"}></div>
                 <div className={"col-8"}>
 
-                    <video style={videoStyle} playsinline muted loop="true" autoplay="autoplay" controls>
+                    <video style={videoStyle} playsInline muted loop={true} autoPlay="autoplay" controls>
                         <source src={featureVideo} type="video/mp4" />
                     </video>
 

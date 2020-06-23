@@ -37,22 +37,65 @@ body {
     .top-menu {
       display: flex;
       justify-content: space-between;
-
-      .get-started {
-        a {
-          width: 160px;
-          height: 47px;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 16px;
-          line-height: 47px;
-          display: block;
-          background: #8953B7;
-          border-radius: 4px;
-          text-align: center;
-          color: #FFFFFF;
+        .show-menu {
+            color: #fff;
+            background: #8953B7;
+            border-radius: 4px;
+            text-align: center;
+            width: 160px;
+            height: 47px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 47px;
+            display: none;
+            cursor: pointer;
+                @media screen and (max-width: $break-small) {
+                    display: block;
+                }
         }
-      }
+
+        input[type=checkbox]{
+            display: none;
+        }
+
+        input[type=checkbox]:checked ~ #menu{
+            display: block;
+        }
+
+        .get-started {
+            display: flex;
+            @media screen and (max-width: $break-small) {
+                display: none;
+            }
+            a {
+                width: 160px;
+                height: 47px;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 47px;
+                display: block;
+                background: #8953B7;
+                border-radius: 4px;
+                text-align: center;
+                color: #FFFFFF;
+                margin: 0 0 0 10px;
+                @media screen and (max-width: $break-small) {
+                    margin: 0;
+                    background: none;
+                    color: #000;
+                }
+                &.contact,
+                &.about{
+                    background: none;
+                    color: #000;
+                    width: auto;
+                    padding: 0 20px;
+                    @media screen and (max-width: $break-small) {
+                        padding: 0;
+                    }
+                }
+            }
+        }
     }
   }
 
@@ -60,7 +103,6 @@ body {
     text-align: center;
     padding: 100px 0 100px 0;
     background-color: #fdfaff;
-    border-radius: 0px 0px 40px 40px;
 
     @media screen and (max-width: $break-small) {
       padding-top: 1px;
@@ -167,7 +209,6 @@ body {
     background-color: #8953B7;
     color: #ffffff;
     padding: 65px 0;
-    border-radius: 40px 40px 0px 0px;
 
     .container {
       display: flex;
@@ -244,6 +285,50 @@ body {
     .title {
       margin: 0 0 44px;
     }
+    .field:not(:last-child) {
+        margin-bottom: .75rem;
+    }
+    .control {
+        box-sizing: border-box;
+        .input, .textarea, .button {
+            box-shadow: inset 0 .0625em .125em rgba(10,10,10,.05);
+            max-width: 100%;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 4px;
+            color: #e1e1e1;
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #dbdbdb;
+            justify-content: flex-start;
+            line-height: 1.5;
+            padding: calc(.5em - 1px) calc(.75em - 1px);
+            position: relative;
+            vertical-align: top;
+            font-size: 1.25rem;
+            &:hover {
+                border-color: #b5b5b5;
+            }
+            &:focus {
+                border-color: #8953B7;
+                box-shadow: 0 0 0 .125em rgba(50,115,220,.25);
+            }
+        }
+        .button.is-primary {
+            background-color: #8953B7;
+            border-color: transparent;
+            color: #fff;
+            //display: flex;
+            width: auto;
+            border-width: 1px;
+            cursor: pointer;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: calc(.5em - 1px) 1em;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
   }
 
   .targets {
@@ -281,6 +366,7 @@ body {
     .widget__item {
       @media screen and (max-width: $break-small) {
         padding: 15px 0 0;
+        text-align: center;
       }
 
       .about {

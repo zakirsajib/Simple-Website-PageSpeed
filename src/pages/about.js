@@ -12,7 +12,7 @@ const AboutPage = () => (
         <SEO title="About"/>
 
         <div className={"page-header"}>
-            <h2>What’s HiStaff?</h2>
+            <h2>About</h2>
             <p>HiStaff is a service that boost the staff’s productivity by offering new ways<br />to increase employee motivation and happiness.</p>
         </div>
 

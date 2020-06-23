@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
 		title: 'Zakir Sajib - Google pagespeed',
-        description: `Open-Source Gatsby Starter with SCSS Styling`,
+        description: `Full Stack Web Developer`,
         author: `@zakirsajib`,
 		siteUrl: `https://zakir-pagespeed.netlify.app/`
     },

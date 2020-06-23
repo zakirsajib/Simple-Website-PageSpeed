@@ -12,13 +12,18 @@ const Header = ({siteTitle}) => (
                         <img alt={"Logo"} src={logo}/>
                     </Link>
                 </div>
-
-                <div className={"get-started"}>
-                    <a
-                        href="https://zsresume.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >About Me</a>
+                <div>
+                    <label for="show-menu" className="show-menu">Menu</label>
+                    <input type="checkbox" id="show-menu" role="button"/>
+                    <div className={"get-started"} id="menu">
+                        <Link to="/about" className={"about"} title={"About me"}>About</Link>
+                        <Link to="/contact" className={"contact"} title={"Contact me"}>Contact</Link>
+                        <a
+                            href="https://zsresume.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Hire Me</a>
+                    </div>
                 </div>
             </div>
         </div>
